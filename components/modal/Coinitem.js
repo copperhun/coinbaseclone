@@ -4,6 +4,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import { client } from '../../lib/sanity'
 import { FaCheck } from 'react-icons/fa'
 
+
 const CoinItem = ({
   token,
   sender,
@@ -15,6 +16,7 @@ const CoinItem = ({
 }) => {
   const [balance, setBalance] = useState('Fetching...')
   const [imageUrl, setImageUrl] = useState(null)
+
 
   useEffect(() => {
     const getBalance = async () => {

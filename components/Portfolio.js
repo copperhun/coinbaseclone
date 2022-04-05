@@ -10,7 +10,8 @@ import BalanceChart from './BalanceChart'
 
 const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
   const [walletBalance, setWalletBalance] = useState(0)
-  const tokenToUSD = {}
+  const newLocal = {}
+  const tokenToUSD = newLocal
 
   for (const token of sanityTokens) {
     tokenToUSD[token.contractAddress] = Number(token.usdPrice)
@@ -30,7 +31,7 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
     }
 
     return calculateTotalBalance()
-  }, [thirdWebTokens, sanityTokens])
+  }, [thirdWebTokens, tokenToUSD, walletAddress])
 
 
   return (

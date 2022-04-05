@@ -38,7 +38,7 @@ const CoinItem = ({
 
     getImgUrl()
     getBalance()
-  }, [])
+  }, [sender, thirdWebTokens, token.contractAddress, token.logo])
 
   return (
     <Wrapper

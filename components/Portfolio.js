@@ -99,7 +99,7 @@ const Content = styled.div`
 `
 
 const Chart = styled.div`
-  border: 1px solid #282b2f;
+  border: 1px flex #282b2f;
   padding: 1rem 2rem;
 `
 
@@ -107,7 +107,7 @@ const Balance = styled.div``
 
 const BalanceTitle = styled.div`
   color: #8a919e;
-  font-size: 0.9rem;
+  font-size: 1rem;
 `
 
 const BalanceValue = styled.div`

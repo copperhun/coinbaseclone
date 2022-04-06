@@ -4,6 +4,9 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import { navItems } from '../static/navItems'
 
+
+
+
 const Sidebar = () => {
   const [activeIcon, setActiveIcon] = useState(navItems[0].title)
   return (

@@ -6,15 +6,20 @@ import { navItems } from '../static/navItems'
 
 
 
-
 const Sidebar = () => {
   const [activeIcon, setActiveIcon] = useState(navItems[0].title)
+
+
+
+
   return (
     <Wrapper>
+
       <LogoContainer>
         <Logo>
           <Image src={CoinbaseLogo} alt='Coinbase Logo' />
         </Logo>
+
       </LogoContainer>
       <NavItemsContainer>
         {navItems.map((item, index) => (

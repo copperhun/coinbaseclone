@@ -4,20 +4,27 @@ import React from 'react'
 import { render } from 'react-dom'
 
 
+
 const supportedChainIds = [4]
 const connectors = {
   injected: {},
 }
 
+
+
 function MyApp({ Component, pageProps }) {
   return (
+
     <ThirdwebWeb3Provider
       supportedChainIds={supportedChainIds}
       connectors={connectors}
     >
       <Component {...pageProps} />
+
     </ThirdwebWeb3Provider>
   )
 }
+
+
 
 export default MyApp

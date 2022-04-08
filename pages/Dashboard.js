@@ -6,11 +6,12 @@ import Sidebar from '../components/Sidebar'
 import { ethers } from 'ethers'
 import { ThirdwebSDK } from '@3rdweb/sdk'
 
+
 const sdk = new ThirdwebSDK(
   new ethers.Wallet(
     process.env.NEXT_PUBLIC_METAMASK_KEY,
     ethers.getDefaultProvider(
-      'https://rinkeby.infura.io/v3/8c5e1eb2213149a48c9b934622c2f2e6'
+      ''
     )
   )
 )
@@ -22,7 +23,7 @@ const Dashboard = ({ address }) => {
     const getSanityAndThirdWebTokens = async () => {
 
       const coins = await fetch(
-        "https://byuvuopa.api.sanity.io/v1/data/query/production?query=*%5B_type%3D%3D'coins'%5D%20%0A%7B%20name%2C%20%0A%20usdPrice%2C%0A%20contractAddress%2C%0A%20symbol%2C%0A%20logo%2C%0A%7D%0A"
+        ""
       )
       const sanityTokens = (await coins.json()).result
       setSanityTokens(sanityTokens)

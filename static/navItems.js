@@ -10,6 +10,10 @@ import { BsPersonPlus } from 'react-icons/bs'
 
 export const navItems = [
   {
+    title: 'Announcement',
+    icon: <RiNotification3Line />,
+  },
+  {
     title: 'Assets',
     icon: <AiOutlinePieChart />,
   },
@@ -17,28 +21,12 @@ export const navItems = [
     title: 'Trade',
     icon: <BiTrendingUp />,
   },
-  {
-    title: 'Pay',
-    icon: <RiCoinsLine />,
-  },
-  {
-    title: 'For You',
-    icon: <MdWeb />,
-  },
-  {
-    title: 'Learn and earn',
-    icon: <AiOutlinePlusCircle />,
-  },
-  {
-    title: 'Notifications',
-    icon: <RiNotification3Line />,
-  },
+
+
+
   {
     title: 'Invite Friends',
     icon: <BsPersonPlus />,
   },
-  {
-    title: 'Send a gift',
-    icon: <AiOutlineGift />,
-  },
+
 ]
